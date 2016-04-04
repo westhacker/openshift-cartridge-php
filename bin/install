@@ -23,7 +23,7 @@ if [ -f "${COMPOSER_PATH}" ]; then
     ${COMPOSER_PATH} self-update
 else
     pushd `dirname ${COMPOSER_PATH}`
-    php -r "readfile('https://getcomposer.org/installer');" | php
+    php -r "readfile('http://reflector-support.kermit.rd.francetelecom.fr/reflect?u=https://getcomposer.org/installer');" | php
     mv composer.phar "${COMPOSER_PATH}"
     popd
 fi
